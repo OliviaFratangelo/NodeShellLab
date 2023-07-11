@@ -3,12 +3,9 @@ process.stdout.write('prompt > ');
 
 // The stdin 'data' event fires after a user types in a line
 
-process.stdin.on('data', (data) => {
-    const path = require('path');
+// we can access the pwd function and store it in a variable like so
+const pwd = require('./pwd');
 
-    const currentDirectory = process.cwd();
-    const fullPath = path.resolve(currentDirectory);
-
-    console.log(fullPath);
-})
+// if a user enters 'pwd' as an argument, we can then call it
+pwd();
 
