@@ -9,3 +9,4 @@ const pwd = require('./pwd');
 // if a user enters 'pwd' as an argument, we can then call it
 pwd();
 
+const ls = require('./ls')
